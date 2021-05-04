@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: url(./covid.jpg) center/cover; */
+  overflow: hidden;
+  background: black;
+}
+.title-text {
+  position: absolute;
+  top: calc(100vh - 90%);
+  left: calc(100vw - 50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: black;
+  font-family: Ubuntu;
+  padding: 10px 30px;
+  color: crimson;
+  font-size: 40px;
+  border-radius: 9px;
+}
+.box {
+  backdrop-filter: blur(5px);
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box h3 {
+  color: black;
+  font-size: 30px;
+  font-family: Ubuntu;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.box span {
+  color: rgb(192, 0, 38);
+  margin-left: auto;
+}
+.main-div {
+  height: 100vh;
+  width: 100vw;
+  background: url('./covid.jpg') no-repeat center;
+  opacity: 60%;
+}
+.mask img {
+  width: 100%;
+}
+.mask {
+  background: white;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.box-mask {
+  z-index: 3;
+}
+.use {
+  position: absolute;
+  color: slateblue;
+  background: black;
+  font-size: 15px;
+  font-family: Ubuntu;
+  position: absolute;
+  display: inline;
+  padding: 5px 20px;
+  border-radius: 12px;
+  text-align: center;
+  top: 140px;
+  left: 30px;
+}
+.country {
+  opacity: 100%;
+  font-size: 18px;
+  outline: none;
+  border: 0;
+  padding: 5px;
+  background: lightgreen;
+}
+.submit {
+  font-family: Ubuntu;
+  font-size: 17px;
+  padding: 5px 10px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: rgb(185, 38, 38);
+  color: white;
+  font-weight: 900;
+  margin-left: 20px;
+  border: 1px solid white;
+}
+#refresh {
+  font-family: Ubuntu;
+  font-size: 17px;
+  padding: 5px 10px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: rgb(185, 38, 38);
+  color: white;
+  font-weight: 900;
+  margin-left: 20px;
+  border: 1px solid white;
+}
+.mars {
+  display: flex;
+  margin-top: 10px;
+}
+#form {
+  padding: 3px 10px;
+}
+.submit:hover {
+  background: white;
+  color: crimson;
+  border: 1px solid white;
+}
+#refresh:hover {
+  background: white;
+  color: crimson;
+  border: 1px solid white;
+}
+::placeholder {
+  background: lightgreen;
+  color: purple;
+  font-size: 14px;
+  text-align: center;
+}
+#again {
+  display: none;
+}
+#refresh {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  body {
+    overflow: hidden;
+  }
+  .title-text {
+    position: relative;
+    width: 100%;
+    top: 50px;
+    border-radius: 0;
+    overflow: hidden;
+    font-size: 30px;
+    padding: 40px 0;
+    z-index: 1;
+  }
+  .box {
+    padding: 0;
+    transform: translate(-50%, -20%);
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0;
+    top: 30%;
+    height: 600px;
+  }
+  img {
+    overflow: hidden;
+  }
+  .main-div {
+    overflow: hidden;
+  }
+  .box h3 {
+    font-size: 25px;
+    margin: 5px;
+  }
+  .box-mask {
+    position: relative;
+    top: -90px;
+  }
+  .box h3:nth-last-child(4) {
+    margin-top: auto;
+  }
+  .box h3:nth-last-child(1) {
+    margin-bottom: 100px;
+  }
+  .btnss {
+    position: relative;
+    top: 180px;
+  }
+}
